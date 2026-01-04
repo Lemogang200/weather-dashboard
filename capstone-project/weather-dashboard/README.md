@@ -1,16 +1,70 @@
-# React + Vite
+Weather Dashboard (React + Vite)
+A beginner-friendly Weather Dashboard built with React and Vite that allows users to search for a city and view real-time weather information using a public weather API.
+This project is ideal for learning React fundamentals, working with APIs, managing state, and using environment variables in a modern Vite setup.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+•	Search weather by city name
+•	Displays current temperature and weather conditions
+•	Shows humidity and wind speed
+•	Dynamic weather icons based on conditions
+•	Friendly error messages for invalid searches
+•	Responsive design for mobile and desktop
 
-Currently, two official plugins are available:
+Tech Stack
+•	Framework: React
+•	Build Tool: Vite
+•	Language: JavaScript (ES6)
+•	Styling: TailwindCSS
+•	API: OpenWeatherMap API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Prerequisites
+Make sure you have:
+•	Node.js (v16 or later recommended)
+•	npm or yarn
+•	A free weather API key (OpenWeatherMap)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Installation
+1.	Clone the repository:
+ 	git clone https://github.com/Lemogang200/weather-dashboard.git
+2.	Navigate into the project folder:
+ 	cd weather-dashboard
+3.	Install dependencies:
+ 	npm install
+4.	Start the development server:
+ 	npm run dev
+ 	
+API Configuration (Vite)
+1.	Sign up at a weather API provider (e.g., OpenWeatherMap)
+2.	Generate your API key
+3.	Create a .env file in the project root
+4.	Add your API key using the Vite format:
+ 	VITE_WEATHER_API_KEY=your_api_key_here
+5.	Access the key in your code:
+ 	import.meta.env.VITE_WEATHER_API_KEY
+    
+How the App Works (Beginner Explanation)
+1.	The user types a city name into the search input
+2.	When the form is submitted, the app calls the weather API
+3.	The API returns weather data in JSON format
+4.	React stores the data using useState
+5.	The UI automatically updates when the state changes
 
-## Expanding the ESLint configuration
+Error Handling
+•	Shows a message when the city is not found
+•	Prevents empty searches
+Learning Extensions
+Want to keep practicing? Try adding:
+•	5-day forecast
+•	Temperature unit toggle (°C / °F)
+•	Recent search history
+•	Dark mode
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Acknowledgments
+•	Weather data provided by OpenWeatherMap
+•	Built with React + Vite for learning purposes
+
+Contact
+Created by Lemogang Seroka
+Email: taaiboseroka@gmail.com
+GitHub: https://github.com/Lemogang200
