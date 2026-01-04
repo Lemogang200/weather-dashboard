@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[url(./image/img.jpg)] bg-cover bg-center flex items-center justify-center p-4">
       <div className="bg-blue-100 p-6 rounded shadow-md w-full max-w-md">
-        <h1 className="text-3xl font-bold text-blue-500 text-center mb-4">
+        <h1 className="text-3xl font-bold text-blue-500 text-shadow-lg/20 text-center mb-4">
           Weather Dashboard
         </h1>
         <SearchBar city={city} setCity={setCity} onSearch={handleSearch} />
